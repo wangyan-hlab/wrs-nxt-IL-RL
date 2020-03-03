@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+service Knt {
+  rpc getrgbarray (Empty) returns (ReturnValue) {}
+  rpc getdeptharray (Empty) returns (ReturnValue) {}
+  rpc getdepthraw (Empty) returns (ReturnValue) {}
+  rpc getpcdarray (MatKW) returns (ReturnValue) {}
+  rpc getpartialpcdarray (PartialPcdPara) returns (ReturnValue) {}
+  rpc mapColorPointToCameraSpace (Pair) returns (ReturnValue) {}
+}
+
+message Empty {
+}
+
+message MatKW {
+    // np4x4 mat that transforms from kinect to world
+    // in yaml format
+    string data = 1;
+}
+
+message Pair {
+    int32 data0 = 1;
+    int32 data1 = 2;
+}
+
+message PartialPcdPara {
+    // a yaml format that saves the data returned by getdepthraw
+    string data = 1;
+    Pair width = 2;
+    Pair height = 3;
+    MatKW matkw = 4;
+}
+
+message ReturnValue {
+  string data = 1;
+}

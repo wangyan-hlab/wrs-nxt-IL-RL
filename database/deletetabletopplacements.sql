@@ -1,0 +1,2 @@
+delete from tabletopplacements using tabletopplacements, freetabletopplacement
+where tabletopplacements.idfreetabletopplacement = freetabletopplacement.idfreetabletopplacement and freetabletopplacement.idobject = 5

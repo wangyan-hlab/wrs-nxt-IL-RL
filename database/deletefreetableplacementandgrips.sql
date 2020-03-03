@@ -1,0 +1,1 @@
+delete from freetabletopgrip using freetabletopgrip, freetabletopplacement where freetabletopgrip.idfreetabletopplacement = freetabletopplacement.idfreetabletopplacement and freetabletopplacement.idobject = 5

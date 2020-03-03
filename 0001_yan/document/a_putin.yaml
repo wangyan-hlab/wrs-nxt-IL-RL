@@ -1,0 +1,326 @@
+# Assembly action data format version 0.1
+
+mainItem: groove
+subItem: LL
+durationTime: 15
+sequence: 
+  - 
+    time: 0
+    pose: 
+      translation: [ -0.1, 0.03, 0.2 ]
+      rotation: [ 
+        1, 0, 0, 
+        0, 1, -4.89652763e-12, 
+        0, 4.89652763e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 1
+    pose: 
+      translation: [ -0.1, 0.150491593, 0.032270447 ]
+      rotation: [ 
+        1, 0, 0, 
+        0, 1, -4.89652763e-12, 
+        0, 4.89652763e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 2
+    pose: 
+      translation: [ -0.1, 0.1201, 5.88080322e-13 ]
+      rotation: [ 
+        1, 0, 0, 
+        0, 1, -4.89652763e-12, 
+        0, 4.89652763e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 3
+    pose: 
+      translation: [ -0.0800946526, 0.1201, 5.88080322e-13 ]
+      rotation: [ 
+        0.891790412, 0.452448738, 0, 
+        -0.452448738, 0.891790412, -4.89652763e-12, 
+        -2.21542775e-12, 4.36667639e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 4
+    pose: 
+      translation: [ -0.0675767661, 0.0846856035, 4.14672751e-13 ]
+      rotation: [ 
+        0.891790412, 0.452448738, 0, 
+        -0.452448738, 0.891790412, -4.89652763e-12, 
+        -2.21542775e-12, 4.36667639e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 5
+    pose: 
+      translation: [ -0.0485270085, 0.0750207331, 3.67348446e-13 ]
+      rotation: [ 
+        0.891790412, 0.452448738, 0, 
+        -0.452448738, 0.891790412, -4.89652763e-12, 
+        -2.21542775e-12, 4.36667639e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 6
+    pose: 
+      translation: [ -0.0503958671, 0.071337155, 3.49311705e-13 ]
+      rotation: [ 
+        0.891790412, 0.452448738, 0, 
+        -0.452448738, 0.891790412, -4.89652763e-12, 
+        -2.21542775e-12, 4.36667639e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 7
+    pose: 
+      translation: [ -0.0503958671, 0.071337155, 3.49311705e-13 ]
+      rotation: [ 
+        0.878115622, 0.478448487, -3.08148791e-33, 
+        -0.478448487, 0.878115622, -4.89652763e-12, 
+        -2.34273623e-12, 4.2997174e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 8
+    pose: 
+      translation: [ -0.0452028804, 0.0685077137, 3.35457267e-13 ]
+      rotation: [ 
+        0.878115622, 0.478448487, -3.08148791e-33, 
+        -0.478448487, 0.878115622, -4.89652763e-12, 
+        -2.34273623e-12, 4.2997174e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 9
+    pose: 
+      translation: [ -0.0452028804, 0.0685077137, 3.35457267e-13 ]
+      rotation: [ 
+        0.83806916, 0.545564005, -6.16297582e-33, 
+        -0.545564005, 0.83806916, -4.89652763e-12, 
+        -2.67136922e-12, 4.10362879e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 10
+    pose: 
+      translation: [ -0.0417602499, 0.0662666394, 3.24483785e-13 ]
+      rotation: [ 
+        0.83806916, 0.545564005, -6.16297582e-33, 
+        -0.545564005, 0.83806916, -4.89652763e-12, 
+        -2.67136922e-12, 4.10362879e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 11
+    pose: 
+      translation: [ -0.0417602499, 0.0662666394, 3.24483785e-13 ]
+      rotation: [ 
+        0.806955139, 0.590612735, -6.16297582e-33, 
+        -0.590612735, 0.806955139, -4.89652763e-12, 
+        -2.89195158e-12, 3.95127813e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 12
+    pose: 
+      translation: [ -0.0368941266, 0.0627051101, 3.07044658e-13 ]
+      rotation: [ 
+        0.806955139, 0.590612735, -6.16297582e-33, 
+        -0.590612735, 0.806955139, -4.89652763e-12, 
+        -2.89195158e-12, 3.95127813e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 13
+    pose: 
+      translation: [ -0.0367683232, 0.0626096796, 3.0657738e-13 ]
+      rotation: [ 
+        0.767250237, 0.641347857, 6.16297582e-33, 
+        -0.641347857, 0.767250237, -4.89652763e-12, 
+        -3.1403775e-12, 3.75686198e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 14
+    pose: 
+      translation: [ -0.034717397, 0.0608953014, 2.9818288e-13 ]
+      rotation: [ 
+        0.798486116, 0.602013225, 6.16297582e-33, 
+        -0.602013225, 0.798486116, -4.89652763e-12, 
+        -2.94777439e-12, 3.90980933e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]
+  - 
+    time: 15
+    pose: 
+      translation: [ -0.034717397, 0.0608953014, 2.9818288e-13 ]
+      rotation: [ 
+        0.798486116, 0.602013225, 6.16297582e-33, 
+        -0.602013225, 0.798486116, -4.89652763e-12, 
+        -2.94777439e-12, 3.90980933e-12, 1 ]
+    subObject: 
+      prehension: 
+        type: prehension
+        handFrame: 
+          translation: [ 0, 0.1, 0 ]
+          rotation: [ 
+            0, 0, -1, 
+            1, 0, 0, 
+            0, -1, 0 ]
+        graspPoints: 
+          - [ 0, 0, 0.01 ]
+          - [ 0, 0, -0.01 ]

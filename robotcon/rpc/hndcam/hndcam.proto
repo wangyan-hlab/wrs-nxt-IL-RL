@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+service Cam {
+  rpc getrc0img (Empty) returns (CamImg) {}
+  rpc getrc1img (Empty) returns (CamImg) {}
+  rpc getlc0img (Empty) returns (CamImg) {}
+  rpc getlc1img (Empty) returns (CamImg) {}
+}
+
+message Empty {
+}
+
+message CamImg {
+  string data = 1;
+}

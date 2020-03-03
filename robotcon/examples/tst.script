@@ -1,0 +1,8 @@
+thread Force_properties_calculation_thread_1():
+  while (True):
+    force_mode(tool_pose(), [0, 0, 1, 0, 0, 0], [0.0, 0.0, 10.0, 0.0, 0.0, 0.0], 2, [0.1, 0.1, 0.15, 0.17, 0.17, 0.17])
+    sync()
+  end
+end
+
+global thread_handler_1 = run Force_properties_calculation_thread_1()
