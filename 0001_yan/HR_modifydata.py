@@ -167,118 +167,118 @@ for file in files: #遍历文件夹
         #                          round(robj[i][0], 3), round(robj[i][1], 3), round(robj[i][2], 3)])
         # print("Resample data %s written" % file)
 
-        plt.figure(1)
-        # plt.subplot(211)
-        x = np.linspace(0, 40000, len(px), endpoint=False)
-        y = np.array(px)
-        y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
-        x_new = np.linspace(0, 40000, resample_num, endpoint=False)
-        plt.plot(x, y, 'go-', markersize=2, label='px')
-        # plt.scatter(x_new, y_new, c='red', s = 1, alpha=0.5, label='px_resample')
-        plt.plot(x_new, y_new, 'r.-', markersize=.5, label='px_resample')
-        plt.legend().set_draggable(True)
-        #
-        plt.figure(2)
-        x = np.linspace(0, 40000, len(py), endpoint=False)
-        y = np.array(py)
-        y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
-        x_new = np.linspace(0, 40000, resample_num, endpoint=False)
-        plt.plot(x, y, 'yo-', markersize=2, label='py')
-        plt.plot(x_new, y_new, 'b.-', markersize=.5,  label='py_resample')
-        plt.legend().set_draggable(True)
-        #
-        plt.figure(3)
-        x = np.linspace(0, 40000, len(pz), endpoint=False)
-        y = np.array(pz)
-        y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
-        x_new = np.linspace(0, 40000, resample_num, endpoint=False)
-        plt.plot(x, y, 'ko-', markersize=2, label='pz')
-        plt.plot(x_new, y_new, 'c.-', markersize=.5, label='pz_resample')
-        plt.legend().set_draggable(True)
-        #
-        plt.figure(4)
-        # plt.subplot(212)
-        x = np.linspace(0, 40000, len(prx), endpoint=False)
-        y = np.array(prx)
-        y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
-        x_new = np.linspace(0, 40000, resample_num, endpoint=False)
-        plt.plot(x, y, 'go-', markersize=2, label='prx')
-        plt.plot(x_new, y_new, 'r.-', markersize=.5, label='prx_resample')
-        plt.legend().set_draggable(True)
-
-        plt.figure(5)
-        x = np.linspace(0, 40000, len(pry), endpoint=False)
-        y = np.array(pry)
-        y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
-        # print(len(y_new), y_new)
-        x_new = np.linspace(0, 40000, resample_num, endpoint=False)
-        plt.plot(x, y, 'yo-', markersize=2, label='pry')
-        plt.plot(x_new, y_new, 'b.-', markersize=.5, label='pry_resample')
-        plt.legend().set_draggable(True)
-
-        plt.figure(6)
-        x = np.linspace(0, 40000, len(prz), endpoint=False)
-        y = np.array(prz)
-        y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
-        x_new = np.linspace(0, 40000, resample_num, endpoint=False)
-        plt.plot(x, y, 'ko-', markersize=2, label='prz')
-        plt.plot(x_new, y_new, 'c.-', markersize=.5, label='prz_resample')
-        plt.legend().set_draggable(True)
-        #
-        # plt.figure(7)
+        # plt.figure(1)
         # # plt.subplot(211)
-        # x = np.linspace(0, 40000, len(fx), endpoint=False)
-        # y = np.array(fx)
+        # x = np.linspace(0, 40000, len(px), endpoint=False)
+        # y = np.array(px)
         # y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
         # x_new = np.linspace(0, 40000, resample_num, endpoint=False)
-        # plt.plot(x, y, 'go-', markersize=5, label='fx')
-        # plt.plot(x_new, y_new, 'r.-', markersize=.5, label='fx_resample')
+        # plt.plot(x, y, 'go-', markersize=2, label='px')
+        # # plt.scatter(x_new, y_new, c='red', s = 1, alpha=0.5, label='px_resample')
+        # plt.plot(x_new, y_new, 'r.-', markersize=.5, label='px_resample')
         # plt.legend().set_draggable(True)
         # #
-        # plt.figure(8)
-        # x = np.linspace(0, 40000, len(fy), endpoint=False)
-        # y = np.array(fy)
+        # plt.figure(2)
+        # x = np.linspace(0, 40000, len(py), endpoint=False)
+        # y = np.array(py)
         # y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
         # x_new = np.linspace(0, 40000, resample_num, endpoint=False)
-        # plt.plot(x, y, 'yo-', markersize=5, label='fy')
-        # plt.plot(x_new, y_new, 'b.-', markersize=.5, label='fy_resample')
+        # plt.plot(x, y, 'yo-', markersize=2, label='py')
+        # plt.plot(x_new, y_new, 'b.-', markersize=.5,  label='py_resample')
+        # plt.legend().set_draggable(True)
+        # #
+        # plt.figure(3)
+        # x = np.linspace(0, 40000, len(pz), endpoint=False)
+        # y = np.array(pz)
+        # y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
+        # x_new = np.linspace(0, 40000, resample_num, endpoint=False)
+        # plt.plot(x, y, 'ko-', markersize=2, label='pz')
+        # plt.plot(x_new, y_new, 'c.-', markersize=.5, label='pz_resample')
+        # plt.legend().set_draggable(True)
+        # #
+        # plt.figure(4)
+        # # plt.subplot(212)
+        # x = np.linspace(0, 40000, len(prx), endpoint=False)
+        # y = np.array(prx)
+        # y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
+        # x_new = np.linspace(0, 40000, resample_num, endpoint=False)
+        # plt.plot(x, y, 'go-', markersize=2, label='prx')
+        # plt.plot(x_new, y_new, 'r.-', markersize=.5, label='prx_resample')
         # plt.legend().set_draggable(True)
         #
-        # plt.figure(9)
-        # x = np.linspace(0, 40000, len(fz), endpoint=False)
-        # y = np.array(fz)
+        # plt.figure(5)
+        # x = np.linspace(0, 40000, len(pry), endpoint=False)
+        # y = np.array(pry)
         # y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
+        # # print(len(y_new), y_new)
         # x_new = np.linspace(0, 40000, resample_num, endpoint=False)
-        # plt.plot(x, y, 'ko-', markersize=5, label='fz')
-        # plt.plot(x_new, y_new, 'c.-', markersize=.5, label='fz_resample')
+        # plt.plot(x, y, 'yo-', markersize=2, label='pry')
+        # plt.plot(x_new, y_new, 'b.-', markersize=.5, label='pry_resample')
         # plt.legend().set_draggable(True)
-        # #
-        # plt.figure(10)
-        # plt.subplot(212)
-        # x = np.linspace(0, 40000, len(frx), endpoint=False)
-        # y = np.array(frx)
+        #
+        # plt.figure(6)
+        # x = np.linspace(0, 40000, len(prz), endpoint=False)
+        # y = np.array(prz)
         # y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
         # x_new = np.linspace(0, 40000, resample_num, endpoint=False)
-        # plt.plot(x, y, 'go-', markersize=5, label='mx')
-        # plt.plot(x_new, y_new, 'r.-', markersize=.5, label='mx_resample')
+        # plt.plot(x, y, 'ko-', markersize=2, label='prz')
+        # plt.plot(x_new, y_new, 'c.-', markersize=.5, label='prz_resample')
         # plt.legend().set_draggable(True)
-        # #
-        # plt.figure(11)
-        # x = np.linspace(0, 40000, len(fry), endpoint=False)
-        # y = np.array(fry)
-        # y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
-        # x_new = np.linspace(0, 40000, resample_num, endpoint=False)
-        # plt.plot(x, y, 'yo-', markersize=5, label='my')
-        # plt.plot(x_new, y_new, 'b.-', markersize=.5, label='my_resample')
-        # plt.legend().set_draggable(True)
-        # #
-        # plt.figure(12)
-        # x = np.linspace(0, 40000, len(frz), endpoint=False)
-        # y = np.array(frz)
-        # y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
-        # x_new = np.linspace(0, 40000, resample_num, endpoint=False)
-        # plt.plot(x, y, 'ko-', markersize=5, label='mz')
-        # plt.plot(x_new, y_new, 'c.-', markersize=.5, label='mz_resample')
+        #
+        plt.figure(7)
+        # plt.subplot(211)
+        x = np.linspace(0, 40000, len(fx), endpoint=False)
+        y = np.array(fx)
+        y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
+        x_new = np.linspace(0, 40000, resample_num, endpoint=False)
+        plt.plot(x, y, 'go-', markersize=5, label='fx')
+        plt.plot(x_new, y_new, 'r.-', markersize=.5, label='fx_resample')
+        plt.legend().set_draggable(True)
+        #
+        plt.figure(8)
+        x = np.linspace(0, 40000, len(fy), endpoint=False)
+        y = np.array(fy)
+        y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
+        x_new = np.linspace(0, 40000, resample_num, endpoint=False)
+        plt.plot(x, y, 'yo-', markersize=5, label='fy')
+        plt.plot(x_new, y_new, 'b.-', markersize=.5, label='fy_resample')
+        plt.legend().set_draggable(True)
+
+        plt.figure(9)
+        x = np.linspace(0, 40000, len(fz), endpoint=False)
+        y = np.array(fz)
+        y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
+        x_new = np.linspace(0, 40000, resample_num, endpoint=False)
+        plt.plot(x, y, 'ko-', markersize=5, label='fz')
+        plt.plot(x_new, y_new, 'c.-', markersize=.5, label='fz_resample')
+        plt.legend().set_draggable(True)
+        #
+        plt.figure(10)
+        plt.subplot(212)
+        x = np.linspace(0, 40000, len(frx), endpoint=False)
+        y = np.array(frx)
+        y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
+        x_new = np.linspace(0, 40000, resample_num, endpoint=False)
+        plt.plot(x, y, 'go-', markersize=5, label='mx')
+        plt.plot(x_new, y_new, 'r.-', markersize=.5, label='mx_resample')
+        plt.legend().set_draggable(True)
+        #
+        plt.figure(11)
+        x = np.linspace(0, 40000, len(fry), endpoint=False)
+        y = np.array(fry)
+        y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
+        x_new = np.linspace(0, 40000, resample_num, endpoint=False)
+        plt.plot(x, y, 'yo-', markersize=5, label='my')
+        plt.plot(x_new, y_new, 'b.-', markersize=.5, label='my_resample')
+        plt.legend().set_draggable(True)
+        #
+        plt.figure(12)
+        x = np.linspace(0, 40000, len(frz), endpoint=False)
+        y = np.array(frz)
+        y_new = ss.resample(y, resample_num+del_num)[int(del_num/2):int(resample_num+del_num/2)]
+        x_new = np.linspace(0, 40000, resample_num, endpoint=False)
+        plt.plot(x, y, 'ko-', markersize=5, label='mz')
+        plt.plot(x_new, y_new, 'c.-', markersize=.5, label='mz_resample')
         plt.legend().set_draggable(True)
         plt.show()
 

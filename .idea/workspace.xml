@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f2fe321-8b10-4d3b-8373-2e4af1cc7709" name="Default Changelist" comment="“”" />
+    <list default="true" id="7f2fe321-8b10-4d3b-8373-2e4af1cc7709" name="Default Changelist" comment="“”">
+      <change afterPath="$PROJECT_DIR$/0001_yan/HR_GMM_cluster.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/HR_MLE_Gaussian.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/HR_MLE_GaussianMixture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/HR_data_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/HR_validateGMM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/HR_validateGMM_new.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/document/GMM_parameters_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/document/GMM_parameters_1_H.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/document/GMM_parameters_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/document/GMM_parameters_2_H.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/document/GMM_parameters_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/document/GMM_parameters_3_H.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/document/GMM_parameters_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/document/GMM_parameters_4_H.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/document/fff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0001_yan/t.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/HR_datarelabeling.py" beforeDir="false" afterPath="$PROJECT_DIR$/0001_yan/HR_datarelabeling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/HR_modifydata.py" beforeDir="false" afterPath="$PROJECT_DIR$/0001_yan/HR_modifydata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/Data_high.txt" beforeDir="false" afterPath="$PROJECT_DIR$/0001_yan/document/Data_high.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/Data_low.txt" beforeDir="false" afterPath="$PROJECT_DIR$/0001_yan/document/Data_low.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/a_putin.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/action0.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/action1.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/action2.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/action3.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/action4.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/action5.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/action6.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/action7.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/action8.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/action9.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/insertL.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/document/screw.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001_yan/readtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/0001_yan/readtest.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,21 +74,21 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/0001_yan" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\wrs-nxt-IL-RL\0001_yan" />
       <recent name="D:\Documents\wrs-nxt-master\0001_yan\document" />
       <recent name="$PROJECT_DIR$/0001_yan" />
       <recent name="$PROJECT_DIR$/0001_yan/objects" />
       <recent name="$PROJECT_DIR$/motionplanning" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.HR_datarelabeling">
-    <configuration name="HR_calobjpose (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.HR_validateGMM_new (1)">
+    <configuration name="HR_MLE_Gaussian" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="wrs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -64,7 +100,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0001_yan/HR_calobjpose.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0001_yan/HR_MLE_Gaussian.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -73,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="HR_calobjpose" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="HR_MLE_GaussianMixture" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="wrs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -85,7 +121,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\Documents\wrs-nxt-master\0001_yan\HR_calobjpose.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0001_yan/HR_MLE_GaussianMixture.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,7 +130,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="HR_calobjpose" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="HR_validateGMM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="wrs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,7 +142,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\Documents\wrs-nxt-master\0001_yan\HR_calobjpose.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0001_yan/HR_validateGMM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -115,7 +151,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="HR_datarelabeling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="HR_validateGMM_new (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="wrs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,7 +163,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0001_yan/HR_datarelabeling.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0001_yan/HR_validateGMM_new.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -136,7 +172,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="HR_modifydata (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="HR_validateGMM_new" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="wrs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,7 +184,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0001_yan/HR_modifydata.py" />
+      <option name="SCRIPT_NAME" value="D:\Documents\wrs-nxt-IL-RL\0001_yan\HR_validateGMM_new.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,7 +193,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="newtest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="t" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="wrs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -169,7 +205,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0001_yan/newtest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0001_yan/t.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.HR_datarelabeling" />
-        <item itemvalue="Python.HR_modifydata (1)" />
-        <item itemvalue="Python.HR_calobjpose" />
-        <item itemvalue="Python.HR_calobjpose (1)" />
-        <item itemvalue="Python.newtest" />
+        <item itemvalue="Python.HR_validateGMM_new (1)" />
+        <item itemvalue="Python.HR_MLE_Gaussian" />
+        <item itemvalue="Python.HR_validateGMM_new" />
+        <item itemvalue="Python.HR_validateGMM" />
+        <item itemvalue="Python.t" />
       </list>
     </recent_temporary>
   </component>
@@ -253,6 +289,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="“”" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583647704817">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583647704817" />
+    <state x="321" y="68" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584168159619">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="321" y="68" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1584168159619" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583913167396">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583913167396" />
     <state x="294" y="0" key="CommitChangelistDialog2" timestamp="1583046746131">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -266,76 +314,71 @@
     </state>
     <state x="120" y="134" key="FileChooserDialogImpl/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1581313842696" />
     <state x="120" y="134" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583230257683" />
-    <state x="460" y="117" width="424" height="482" key="FileChooserDialogImpl/65.12.1215.708/1280.0.960.540@65.12.1215.708" timestamp="1575359018438" />
-    <state width="1260" height="37" key="GridCell.Tab.0.bottom" timestamp="1583259151202">
+    <state width="1260" height="57" key="GridCell.Tab.0.bottom" timestamp="1584364399306">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="155" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583220246005" />
-    <state width="1260" height="37" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583259151202" />
+    <state width="1260" height="165" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1584181936239" />
+    <state width="1899" height="345" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583575667854" />
+    <state width="1260" height="57" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584364399306" />
     <state width="1192" height="67" key="GridCell.Tab.0.bottom/65.12.1215.708/1280.0.960.540@65.12.1215.708" timestamp="1576069133023" />
     <state width="1192" height="143" key="GridCell.Tab.0.bottom/65.12.2175.708@65.12.2175.708" timestamp="1575976508780" />
     <state width="1192" height="99" key="GridCell.Tab.0.bottom/65.24.1215.696@65.24.1215.696" timestamp="1576131182283" />
-    <state width="1260" height="37" key="GridCell.Tab.0.center" timestamp="1583259151202">
+    <state width="1260" height="57" key="GridCell.Tab.0.center" timestamp="1584364399306">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="155" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583220246005" />
-    <state width="1260" height="37" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583259151202" />
+    <state width="1260" height="165" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1584181936239" />
+    <state width="1899" height="345" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583575667854" />
+    <state width="1260" height="57" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584364399306" />
     <state width="1192" height="67" key="GridCell.Tab.0.center/65.12.1215.708/1280.0.960.540@65.12.1215.708" timestamp="1576069133023" />
     <state width="1192" height="143" key="GridCell.Tab.0.center/65.12.2175.708@65.12.2175.708" timestamp="1575976508780" />
     <state width="1192" height="99" key="GridCell.Tab.0.center/65.24.1215.696@65.24.1215.696" timestamp="1576131182283" />
-    <state width="1260" height="37" key="GridCell.Tab.0.left" timestamp="1583259151202">
+    <state width="1260" height="57" key="GridCell.Tab.0.left" timestamp="1584364399306">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="155" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583220246005" />
-    <state width="1260" height="37" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583259151202" />
+    <state width="1260" height="165" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1584181936239" />
+    <state width="1899" height="345" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583575667854" />
+    <state width="1260" height="57" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584364399306" />
     <state width="1192" height="67" key="GridCell.Tab.0.left/65.12.1215.708/1280.0.960.540@65.12.1215.708" timestamp="1576069133022" />
     <state width="1192" height="143" key="GridCell.Tab.0.left/65.12.2175.708@65.12.2175.708" timestamp="1575976508779" />
     <state width="1192" height="99" key="GridCell.Tab.0.left/65.24.1215.696@65.24.1215.696" timestamp="1576131182282" />
-    <state width="1260" height="37" key="GridCell.Tab.0.right" timestamp="1583259151202">
+    <state width="1260" height="57" key="GridCell.Tab.0.right" timestamp="1584364399306">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="155" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583220246005" />
-    <state width="1260" height="37" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583259151202" />
+    <state width="1260" height="165" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1584181936239" />
+    <state width="1899" height="345" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583575667854" />
+    <state width="1260" height="57" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584364399306" />
     <state width="1192" height="67" key="GridCell.Tab.0.right/65.12.1215.708/1280.0.960.540@65.12.1215.708" timestamp="1576069133023" />
     <state width="1192" height="143" key="GridCell.Tab.0.right/65.12.2175.708@65.12.2175.708" timestamp="1575976508780" />
     <state width="1192" height="99" key="GridCell.Tab.0.right/65.24.1215.696@65.24.1215.696" timestamp="1576131182283" />
-    <state width="1260" height="318" key="GridCell.Tab.1.bottom" timestamp="1583147733296">
+    <state width="1260" height="57" key="GridCell.Tab.1.bottom" timestamp="1584364399306">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="318" key="GridCell.Tab.1.bottom/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583147733296" />
-    <state width="1260" height="195" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583078304195" />
+    <state width="1260" height="318" key="GridCell.Tab.1.bottom/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1584095861189" />
+    <state width="1260" height="57" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584364399306" />
     <state width="1192" height="135" key="GridCell.Tab.1.bottom/65.12.2175.708@65.12.2175.708" timestamp="1575954367828" />
-    <state width="1260" height="318" key="GridCell.Tab.1.center" timestamp="1583147733296">
+    <state width="1260" height="57" key="GridCell.Tab.1.center" timestamp="1584364399306">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="318" key="GridCell.Tab.1.center/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583147733296" />
-    <state width="1260" height="195" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583078304195" />
+    <state width="1260" height="318" key="GridCell.Tab.1.center/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1584095861189" />
+    <state width="1260" height="57" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1584364399306" />
     <state width="1192" height="135" key="GridCell.Tab.1.center/65.12.2175.708@65.12.2175.708" timestamp="1575954367827" />
-    <state width="1260" height="318" key="GridCell.Tab.1.left" timestamp="1583147733296">
+    <state width="1260" height="57" key="GridCell.Tab.1.left" timestamp="1584364399306">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="318" key="GridCell.Tab.1.left/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583147733296" />
-    <state width="1260" height="195" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583078304195" />
+    <state width="1260" height="318" key="GridCell.Tab.1.left/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1584095861189" />
+    <state width="1260" height="57" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1584364399306" />
     <state width="1192" height="135" key="GridCell.Tab.1.left/65.12.2175.708@65.12.2175.708" timestamp="1575954367827" />
-    <state width="1260" height="318" key="GridCell.Tab.1.right" timestamp="1583147733296">
+    <state width="1260" height="57" key="GridCell.Tab.1.right" timestamp="1584364399306">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="318" key="GridCell.Tab.1.right/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583147733296" />
-    <state width="1260" height="195" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583078304195" />
+    <state width="1260" height="318" key="GridCell.Tab.1.right/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1584095861189" />
+    <state width="1260" height="57" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1584364399306" />
     <state width="1192" height="135" key="GridCell.Tab.1.right/65.12.2175.708@65.12.2175.708" timestamp="1575954367827" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1583230292425">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1583263216763">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1582959617740" />
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1583230292425" />
-    <state x="341" y="24" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575524654290">
-      <screen x="65" y="24" width="1215" height="696" />
-    </state>
-    <state x="341" y="24" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/65.24.1215.696@65.24.1215.696" timestamp="1575524654290" />
-    <state x="65" y="139" width="932" height="675" maximized="true" key="dock-window-1" timestamp="1575692790071">
-      <screen x="65" y="12" width="2175" height="708" />
-    </state>
-    <state x="65" y="139" width="932" height="675" key="dock-window-1/65.12.1215.708/1280.0.960.540@65.12.1215.708" timestamp="1575364643805" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1583263216763" />
     <state x="291" y="24" width="708" height="663" key="search.everywhere.popup" timestamp="1583060284625">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
