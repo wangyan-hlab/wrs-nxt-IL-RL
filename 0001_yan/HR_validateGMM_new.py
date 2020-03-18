@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 plt.style.use("seaborn")
 from scipy.stats import multivariate_normal as mvn
+from sklearn import metrics
 from sklearn.mixture import GaussianMixture
 from collections import Counter
 from sklearn.decomposition import PCA
@@ -63,8 +64,8 @@ if __name__ == '__main__':
     ## Low level policy
     # parameters of the GMM (n_components = 4)
     seq = [0, 1, 2, 3]
-    # M = readtest("GMM_parameters_1_pose.txt", 0, 8)
-    M = readtest("GMM_parameters_2_pose.txt", 0, 8)     # best
+    M = readtest("GMM_parameters_1_pose.txt", 0, 8)
+    # M = readtest("GMM_parameters_2_pose.txt", 0, 8)     # best
     # M = readtest("GMM_parameters_3_pose.txt", 0, 8)
     # M = readtest("GMM_parameters_4_pose.txt", 0, 8)
     # M = readtest("GMM_parameters_1_force.txt", 0, 4)
@@ -76,8 +77,8 @@ if __name__ == '__main__':
     m[seq[1]] = np.array(M[6:12])
     m[seq[2]] = np.array(M[12:18])
     m[seq[3]] = np.array(M[18:24])
-    # C = readtest("GMM_parameters_1_pose.txt", 8, 56)
-    C = readtest("GMM_parameters_2_pose.txt", 8, 56)
+    C = readtest("GMM_parameters_1_pose.txt", 8, 56)
+    # C = readtest("GMM_parameters_2_pose.txt", 8, 56)
     # C = readtest("GMM_parameters_3_pose.txt", 8, 56)
     # C = readtest("GMM_parameters_4_pose.txt", 8, 56)
     # C = readtest("GMM_parameters_1_force.txt", 4, 46)
@@ -89,8 +90,8 @@ if __name__ == '__main__':
     c[seq[1]] = np.array([C[6 * 6:6 * 7], C[6 * 7:6 * 8], C[6 * 8:6 * 9], C[6 * 9:6 * 10], C[6 * 10:6 * 11], C[6 * 11:6 * 12]])
     c[seq[2]] = np.array([C[6 * 12:6 * 13], C[6 * 13:6 * 14], C[6 * 14:6 * 15], C[6 * 15:6 * 16], C[6 * 16:6 * 17], C[6 * 17:6 * 18]])
     c[seq[3]] = np.array([C[6 * 18:6 * 19], C[6 * 19:6 * 20], C[6 * 20:6 * 21], C[6 * 21:6 * 22], C[6 * 22:6 * 23], C[6 * 23:6 * 24]])
-    # W = readtest("GMM_parameters_1_pose.txt", 56, 60)
-    W = readtest("GMM_parameters_2_pose.txt", 56, 60)
+    W = readtest("GMM_parameters_1_pose.txt", 56, 60)
+    # W = readtest("GMM_parameters_2_pose.txt", 56, 60)
     # W = readtest("GMM_parameters_3_pose.txt", 56, 60)
     # W = readtest("GMM_parameters_4_pose.txt", 56, 60)
     # W = readtest("GMM_parameters_1_force.txt", 46, 50)
@@ -109,11 +110,11 @@ if __name__ == '__main__':
 
     this_dir, this_filename = os.path.split(__file__)
     f = open(os.path.join(this_dir, "document", "Data_low.txt"), "r")
-    # fl = f.readlines()[2945*0:2945*60]
-    fl = f.readlines()
-    f1 = fl[2945 * 0:2945 * 40]
-    f2 = fl[2945 * 60:2945 * 80]  # [0:294500:50]
-    fl = f1 + f2
+    fl = f.readlines()[2945*0:2945*60]
+    # fl = f.readlines()
+    # f1 = fl[2945 * 0:2945 * 40]
+    # f2 = fl[2945 * 60:2945 * 80]  # [0:294500:50]
+    # fl = f1 + f2
     # fl = f.readlines()
     # f1 = fl[2945*0:2945 * 20]
     # f2 = fl[2945*40:2945*80]  #[0:294500:50]
@@ -147,8 +148,8 @@ if __name__ == '__main__':
     print("low level start")
     # # Validation
     f = open(os.path.join(this_dir, "document", "Data_low.txt"), "r")
-    # fl = f.readlines()[2945*60:2945*80]
-    fl = f.readlines()[2945 * 40:2945 * 60]
+    fl = f.readlines()[2945*60:2945*80]
+    # fl = f.readlines()[2945 * 40:2945 * 60]
     # fl = f.readlines()[2945 * 20:2945 * 40]
     # fl = f.readlines()[2945 * 0:2945 * 20]
     S = []
@@ -179,22 +180,28 @@ if __name__ == '__main__':
     print(type(THETA_L[0]), np.shape(THETA_L[0]))
     mse_old = 0
     mse_new = 0
-    match_l = 0
-    match_l_new = 0
+    # match_l = 0
+    # match_l_new = 0
+    label_origin = []
+    label_predict = []
+    label_predict_new = []
     for m in range(len(STATE)):
         mse_old += sum((np.matmul(STATE[m], theta_l).T - ACTION[m]) ** 2)
         label_bm = predict((ACTION[m]).T, n_components, WEIGHT_L, MEAN_L, COV_L)
+        label_origin.append(label_bm[0])
         # label_origin.append(label_bm[0])
         # print(label_bm)
         # label_pred = predict(np.matmul(STATE[m], THETA_L[0]).T, n_components, WEIGHT_L, MEAN_L, COV_L)
         # label_pred = predict(np.matmul(STATE[m], THETA_L[num]).T, n_components, WEIGHT_L, MEAN_L, COV_L) ##
         label_pred = predict(np.matmul(STATE[m], theta_l).T, n_components, WEIGHT_L, MEAN_L, COV_L)
+        label_predict.append(label_pred[0])
         mse_new += sum((np.matmul(STATE[m], THETA_L[label_pred[0]]).T - ACTION[m]) ** 2)
         label_pred_new = predict(np.matmul(STATE[m], THETA_L[label_pred[0]]).T, n_components, WEIGHT_L, MEAN_L, COV_L)
-        if label_pred[0] == label_bm[0]:
-            match_l += 1
-        if label_pred_new[0] == label_bm[0]:
-            match_l_new += 1
+        label_predict_new.append(label_pred_new[0])
+        # if label_pred[0] == label_bm[0]:
+        #     match_l += 1
+        # if label_pred_new[0] == label_bm[0]:
+        #     match_l_new += 1
 
     ## pose
     # print("old MSE =", mse_old / len(STATE))
@@ -207,14 +214,16 @@ if __name__ == '__main__':
     ## force
     print("old MSE =", mse_old / len(STATE))
     print("new MSE =", mse_new / len(STATE))
-    print("prediction/original data match rate =", match_l / len(STATE))
+    print("prediction/original data match rate =", metrics.accuracy_score(label_origin, label_predict))
     # print("prediction data/model label accuracy rate =", score_s / len(STATE))
-    print("new prediction/original data match rate =", match_l_new / len(STATE))
+    print("new prediction/original data match rate =", metrics.accuracy_score(label_origin, label_predict_new))
     # print("new prediction data/model label accuracy rate =", score_s_new / len(STATE))
     # print("original data/model accuracy rate =", score_a / len(STATE))
+    # print(metrics.adjusted_rand_score(label_origin, label_predict))
+    print(metrics.calinski_harabasz_score(ACTION, label_predict_new))
 
-    # High level policy
-    # parameters of the GMM (n_components = 4)
+    # # High level policy
+    # # parameters of the GMM (n_components = 4)
     seq = [0, 1, 2, 3]
     # M = readtest("GMM_parameters_1_H.txt", 0, 8)
     M = readtest("GMM_parameters_2_H.txt", 0, 8)        # best
@@ -322,27 +331,32 @@ if __name__ == '__main__':
 
     mse_old = 0
     mse_new = 0
-    match_h = 0
-    match_h_new = 0
+    # match_h = 0
+    # match_h_new = 0
+    label_origin = []
+    label_predict = []
+    label_predict_new = []
     for m in range(len(STATE_H)):
         mse_old += sum((np.matmul(STATE_H[m], theta_h).T - STATE_L[m]) ** 2)
         label_bm = predict((STATE_L[m]).T, n_components, WEIGHT_H, MEAN_H, COV_H)
-        # label_origin.append(label_bm[0])
+        label_origin.append(label_bm[0])
         # print(label_bm)
         # label_pred = predict(np.matmul(STATE_H[m], THETA_H[0]).T, n_components, WEIGHT_H, MEAN_H, COV_H)
         # label_pred = predict(np.matmul(STATE_H[m], THETA_H[num]).T, n_components, WEIGHT_H, MEAN_H, COV_H) ##
         label_pred = predict(np.matmul(STATE_H[m], theta_h).T, n_components, WEIGHT_H, MEAN_H, COV_H)
+        label_predict.append(label_pred[0])
         mse_new += sum((np.matmul(STATE_H[m], THETA_H[label_pred[0]]).T - STATE_L[m]) ** 2)
         label_pred_new = predict(np.matmul(STATE_H[m], THETA_H[label_pred[0]]).T, n_components, WEIGHT_H, MEAN_H, COV_H)
-        if label_pred[0] == label_bm[0]:
-            match_h += 1
-        if label_pred_new[0] == label_bm[0]:
-            match_h_new += 1
+        label_predict_new.append(label_pred_new[0])
+        # if label_pred[0] == label_bm[0]:
+        #     match_h += 1
+        # if label_pred_new[0] == label_bm[0]:
+        #     match_h_new += 1
 
-    print("old MSE =", mse_old/len(STATE_H))    # 1) 4.935 2) 4.740 3) 3.788 4) 3.653
-    print("new MSE =", mse_new/len(STATE_H))    # 1) 135.41 2) 94.261 3) 111.07 4) 110.21
-    print("prediction/original data match rate =", match_h / len(STATE_H))
+    print("old MSE =", mse_old/len(STATE_H))
+    print("new MSE =", mse_new/len(STATE_H))
+    print("prediction/original data match rate =", metrics.accuracy_score(label_origin, label_predict))
     # print("prediction data/model label accuracy rate =", score_sh / len(STATE_H))
-    print("new prediction/original data match rate =", match_h_new / len(STATE_H))
+    print("new prediction/original data match rate =", metrics.accuracy_score(label_origin, label_predict_new))
     # print("new prediction data/model label accuracy rate =", score_sh_new / len(STATE_H))
     # print("original data/model accuracy rate =", score_sl / len(STATE_H))

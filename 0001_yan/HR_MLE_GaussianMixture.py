@@ -20,15 +20,15 @@ if __name__ == '__main__':
     # Training
     f = open(os.path.join(this_dir, "document", "Data_low.txt"), "r")
     # fl = f.readlines()[2945*0:2945 * 60]
-    # fl = f.readlines()
-    # f1 = fl[2945*0:2945 * 40]
-    # f2 = fl[2945*60:2945*80]  #[0:294500:50]
-    # fl = f1 + f2
+    fl = f.readlines()
+    f1 = fl[2945*0:2945 * 40]
+    f2 = fl[2945*60:2945*80]  #[0:294500:50]
+    fl = f1 + f2
     # fl = f.readlines()
     # f1 = fl[2945*0:2945 * 20]
     # f2 = fl[2945*40:2945*80]  #[0:294500:50]
     # fl = f1 + f2
-    fl = f.readlines()[2945 * 20:2945 * 80]
+    # fl = f.readlines()[2945 * 20:2945 * 80]
     S = []
     A = []
     n = 0
@@ -43,8 +43,8 @@ if __name__ == '__main__':
             state.append(data[j])
         S.append(state)
         action = []
-        # for k in range(6, 12):
-        for k in range(12, 18):
+        for k in range(6, 12):
+        # for k in range(12, 18):
             action.append(data[k])
         A.append(action)
         # print(n)
@@ -93,9 +93,12 @@ if __name__ == '__main__':
     print(WEIGHT_L)
 
     ## Store the GMM parameters with n_components = 4
-    writefile(MEAN_L, "GMM_parameters_4_force.txt")
-    writefile(COV_L, "GMM_parameters_4_force.txt", edit="a")
-    writefile(WEIGHT_L, "GMM_parameters_4_force.txt", edit="a")
+    writefile(MEAN_L, "GMM_parameters_2_pose.txt")
+    writefile(COV_L, "GMM_parameters_2_pose.txt", edit="a")
+    writefile(WEIGHT_L, "GMM_parameters_2_pose.txt", edit="a")
+    # writefile(MEAN_L, "GMM_parameters_4_force.txt")
+    # writefile(COV_L, "GMM_parameters_4_force.txt", edit="a")
+    # writefile(WEIGHT_L, "GMM_parameters_4_force.txt", edit="a")
 
     # x,y = np.meshgrid(np.sort(ACTION_rdc[:,0]),np.sort(ACTION_rdc[:,1]))
     # XY = np.array([x.flatten(),y.flatten()]).T

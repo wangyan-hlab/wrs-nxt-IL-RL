@@ -9,14 +9,14 @@ if __name__ == '__main__':
     ## Low level policy
     # f = open(os.path.join(this_dir, "document", "Data_low.txt"), "r")
     # # fl = f.readlines()[2945*0:2945*60]
-    # fl = f.readlines()
-    # f1 = fl[2945 * 0:2945 * 40]
-    # f2 = fl[2945 * 60:2945 * 80]  # [0:294500:50]
-    # fl = f1 + f2
     # # fl = f.readlines()
-    # # f1 = fl[2945*0:2945 * 20]
-    # # f2 = fl[2945*40:2945*80]  #[0:294500:50]
+    # # f1 = fl[2945 * 0:2945 * 40]
+    # # f2 = fl[2945 * 60:2945 * 80]  # [0:294500:50]
     # # fl = f1 + f2
+    # fl = f.readlines()
+    # f1 = fl[2945*0:2945 * 20]
+    # f2 = fl[2945*40:2945*80]  #[0:294500:50]
+    # fl = f1 + f2
     # # fl = f.readlines()[2945*20:2945*80]
     # S = []
     # A = []
@@ -92,10 +92,18 @@ if __name__ == '__main__':
     # # plt.show()
 
 
-
-    ## High level policy
+    # High level policy
     f = open(os.path.join(this_dir, "document", "Data_high.txt"), "r")
+    # fh = f.readlines()[1118000*0:1118000*60]
     fh = f.readlines()
+    f1 = fh[1118000 * 0:1118000 * 40]
+    f2 = fh[1118000 * 60:1118000 * 80]
+    fl = f1 + f2
+    # fh = f.readlines()
+    # f1 = fh[1118000*0:1118000 * 20]
+    # f2 = fh[1118000*40:1118000*80]
+    # fh = f1 + f2
+    # fh = f.readlines()[1118000*20:1118000*80]
     S_H = []
     S_L = []
     n = 0
@@ -121,7 +129,7 @@ if __name__ == '__main__':
     # print(np.shape(STATE_H), np.shape(STATE_L))
     a = np.linalg.inv(np.matmul(np.transpose(STATE_H), STATE_H))    #(X'*X)^-1
     theta_h = np.matmul(np.matmul(a, np.transpose(STATE_H)), STATE_L)    #(X'*X)^-1*X'*y
-    print(np.shape(theta_h), theta_h)
+    print(theta_h)
     sigma_h = 1/np.shape(STATE_H)[1] * np.matmul(np.transpose(STATE_L - np.matmul(STATE_H, theta_h)),
                                                STATE_L - np.matmul(STATE_H, theta_h))
     # print(np.shape(sigma_h))
